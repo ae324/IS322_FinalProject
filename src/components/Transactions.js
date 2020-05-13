@@ -1,13 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TransactionData from '../reducers/index'
 
 class Transactions extends React.Component {
 
   render() {
     return (
       <div>
-      {TransactionData.map((transaction, index) => {
+      {this.props.transactions.map((transaction, index) => {
         return <div className="card">
           <p>Account ID: {transaction._id}</p>
           <p>Type: {transaction.type}</p>
@@ -21,4 +20,10 @@ class Transactions extends React.Component {
   }
 }
 
-export default Transactions;
+const mapStateToProps = (state) => {
+  return {
+    transactions:state.accounts.transactions
+  }
+}
+
+export default connect(mapStateToProps)(Transactions);
