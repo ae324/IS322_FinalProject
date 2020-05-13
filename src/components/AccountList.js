@@ -43,7 +43,8 @@ class AccountList extends React.Component {
                         { acc.name }
                         <button type='button'
                                 onClick={() => { this.props.switchAccount(acc._id) }}
-                                className="btn btn-success">
+                                className="btn btn-primary"
+                                style={{ float: 'right' }}/>
                                     View
                         </button>
                     </li>
