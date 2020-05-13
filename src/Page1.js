@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-import css from './css/Page1.css';
+import css from './Page1.css';
 
 import AccountData from './data/AccountData.json';
 
