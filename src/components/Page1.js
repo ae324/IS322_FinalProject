@@ -1,13 +1,14 @@
 import React from 'react';
 import AccountList from './AccountList';
+import css from './style.css';
 
 
 const Page1 = () => {
     return (
-        <div className="container" style={{marginTop: '15px'}}>
-            <div className="row">
+        <div>
+            <div>
 
-                <div className="col-sm-5">
+                <div>
                     <AccountList title="Accounts" stateList="not_selected"></AccountList>
                 </div>
             </div>

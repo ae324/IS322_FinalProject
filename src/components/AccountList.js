@@ -14,26 +14,30 @@ class AccountList extends React.Component {
         return accountArr.map(acc => {
             if(acc.status === "selected") {
                 return (
-                    <li className="card" key={acc._id}>
-                        <h3>{ acc.name }</h3>
-                        <div>Account ID: {acc._id}</div>
-                        <button type='button'
-                                onClick={() => { this.props.removeAccount(acc._id) }}>
-                                    Delete
-                        </button>
+                  <div className="accounts-container">
+                    <div className="accountslist">
+                      <li className="account-details" key={acc._id}>
+                          <h3>{ acc.name }</h3>
+                          <div>Account ID: {acc._id}</div>
+                          <button type='button'
+                                  onClick={() => { this.props.removeAccount(acc._id) }}>
+                                      Delete
+                          </button>
 
-                        <button type='button'
-                                onClick={() => {  }}>
-                                    Edit
-                        </button>
+                          <button type='button'
+                                  onClick={() => {  }}>
+                                      Edit
+                          </button>
 
-                        <div>
-                            <p>Balance: {acc.balance}</p>
-                            <p>Transactions: {acc.transactions}</p>
-                            <ul className="list-group" style={{ marginTop: '15px' }}>
-                             </ul>
-                        </div>
-                    </li>
+                          <div>
+                              <p>Balance: {acc.balance}</p>
+                              <p>Transactions: {acc.transactions}</p>
+                              <ul>
+                               </ul>
+                          </div>
+                      </li>
+                    </div>
+                  </div>
                 );
             } else if (acc.status === 'not_selected'){
                 return (
@@ -59,26 +63,28 @@ class AccountList extends React.Component {
         console.log(this.props)
         if(this.props.title === "Account Details") {
             return(
-                <div className="card" style={{ padding: '10px' }}>
+              <div className="accounts-container">
+                <div className="accountlist">
                     <h3>{this.props.title}</h3>
 
-                    <ul className="list-group" style={{ marginTop: '15px' }}>
+                    <ul>
                        { accountList }
                     </ul>
+                </div>
                 </div>
             );
         } else if(this.props.title === "Accounts") {
             return(
-                <div className="card" style={{ padding: '10px' }}>
-                    <h3>{this.props.title}</h3>
-                    <AddAccount title={this.props.title}
-                                stateList={this.props.stateList}
-                                style={{ float: 'right' }}/>
-
-                    <ul className="list-group" style={{ marginTop: '15px' }}>
+              <div className="accounts-container">
+                <div className="accountlist">
+                    <h3 className="accountstitle">{this.props.title}</h3>
+                    <ul>
                        { accountList }
                     </ul>
-                </div>
+                  </div>
+                <AddAccount title={this.props.title}
+                            stateList={this.props.stateList}/>
+              </div>
             );
         } else if(this.props.title === "Account List") {
             return(

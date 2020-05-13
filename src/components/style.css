@@ -1,5 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Arial;
+}
+
+.accounts-container {
+  text-align: center;
+}
+
+.accountlist {
+  display: inline-block;
 }
 
 .accountlist {
@@ -13,7 +25,19 @@ html {
 .accountlist ul {
   padding: 10px;
   margin: 10px;
-  margin-bottom: 100px;
+}
+
+.account-details {
+  list-style: none;
+  padding: 10px;
+}
+
+.account-details button {
+  width: 75px;
+  background-color: teal;
+  float: right;
+  font-style: italic;
+  color: white;
 }
 
 .card {
@@ -21,7 +45,8 @@ html {
   border: 2px black solid;
   padding: 10px;
   text-align: center;
-  display: flex;
+  width: 25%;
+  display: inline-block;
 }
 
 .card button {
@@ -41,4 +66,23 @@ html {
 
 .flex {
   display: flex;
+}
+
+.accountsleft {
+  float: left;
+  width: 50%;
+}
+
+.accountsright {
+  float: right;
+  width: 50%;
+}
+
+.accountstitle {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.nav-item:selected {
+  color: red;
 }

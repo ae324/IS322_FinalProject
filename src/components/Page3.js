@@ -3,7 +3,7 @@ import AccountList from './AccountList';
 
 const Page3 = props => {
   return (
-      <div className="container" style={{marginTop: '15px'}}>
+      <div className="container">
         <h2>Select an account:</h2>
         <div>
             <AccountList title="Account List" stateList="not_selected"></AccountList>
