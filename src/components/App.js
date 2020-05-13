@@ -8,11 +8,11 @@ const App = () => {
         <div className="container" style={{marginTop: '15px'}}>
             <div className="row">
                 <div className="col-sm-7">
-                <AccountList title="Account Overview" stateList="selected"></AccountList>
+                <AccountList title="Account Overview" stateList="selected"/>
                 </div>
 
                 <div className="col-sm-5">
-                    <AccountList title="Accounts" stateList="not_selected"></AccountList>
+                    <AccountList title="Accounts" stateList="not_selected"/>
                 </div>
             </div>
         </div>
