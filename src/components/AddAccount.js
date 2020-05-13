@@ -30,7 +30,7 @@ class AddAccount extends React.Component {
                            onChange={(e) => this.setState({balance: e.target.value})} />
                 </div>
 
-                <input type="submit" className="btn btn-success" value={'Add Account'}/>
+                <input type="submit" classname="button" value={'Add Account'}/>
             </form>
         )
     }

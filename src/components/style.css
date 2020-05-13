@@ -1,0 +1,44 @@
+html {
+  font-family: Arial;
+}
+
+.accountlist {
+  padding: 10px;
+}
+
+.accountlist h3 {
+  font-style: normal;
+}
+
+.accountlist ul {
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+.card {
+  margin: 10px;
+  border: 2px black solid;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+}
+
+.card button {
+  width: 75px;
+  background-color: teal;
+  float: right;
+  font-style: italic;
+  color: white;
+}
+
+.transaction {
+  width: 25%;
+  border: 1px gray solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}

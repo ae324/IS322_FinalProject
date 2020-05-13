@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { removeAccount } from '../actions';
 import { switchAccount } from '../actions';
 import AddAccount from './AddAccount';
+import css from './style.css';
 
 class AccountList extends React.Component {
 
@@ -13,20 +14,16 @@ class AccountList extends React.Component {
         return accountArr.map(acc => {
             if(acc.status === "selected") {
                 return (
-                    <li className="list-group-item" key={acc._id}>
+                    <li className="card" key={acc._id}>
                         <h3>{ acc.name }</h3>
                         <div>Account ID: {acc._id}</div>
                         <button type='button'
-                                onClick={() => { this.props.removeAccount(acc._id) }}
-                                className="btn btn-danger"
-                                style={{ float: 'right', margin: "5px" }}>
+                                onClick={() => { this.props.removeAccount(acc._id) }}>
                                     Delete
                         </button>
 
                         <button type='button'
-                                onClick={() => {  }}
-                                className="btn btn-warning"
-                                style={{ float: 'right', margin: "5px" }}>
+                                onClick={() => {  }}>
                                     Edit
                         </button>
 
@@ -40,14 +37,12 @@ class AccountList extends React.Component {
                 );
             } else if (acc.status === 'not_selected'){
                 return (
-                    <li className="list-group-item" key={acc._id}>
+                    <li className="card" key={acc._id}>
                         { acc.name }
                         <br />
                         <p>Account ID: {acc._id}</p>
                         <button type='button'
-                                onClick={() => { this.props.switchAccount(acc._id) }}
-                                className="btn btn-success"
-                                style={{ float: 'right' }}>
+                                onClick={() => { this.props.switchAccount(acc._id) }}>
                                     View
                         </button>
                     </li>
@@ -87,10 +82,10 @@ class AccountList extends React.Component {
             );
         } else if(this.props.title === "Account List") {
             return(
-                <div className="card" style={{ padding: '10px' }}>
+                <div className="accountlist">
                     <h3>{this.props.title}</h3>
 
-                    <ul className="list-group" style={{ marginTop: '15px' }}>
+                    <ul>
                        { accountList }
                     </ul>
                 </div>
