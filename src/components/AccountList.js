@@ -44,10 +44,10 @@ class AccountList extends React.Component {
                         <button type='button'
                                 onClick={() => { this.props.switchAccount(acc._id) }}
                                 className="btn btn-primary"
-                                style={{ float: 'right' }}/>
-                                    View
+                                style={{ float: 'right' }}>
+                        View </li>
                         </button>
-                    </li>
+
                 );
             }
 
