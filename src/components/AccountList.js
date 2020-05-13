@@ -30,8 +30,9 @@ class AccountList extends React.Component {
                                     Edit
                         </button>
 
-                        <div className="card">
+                        <div>
                             <p>Balance: {acc.balance}</p>
+                            <p>Transactions: {acc.transactions}</p>
                             <ul className="list-group" style={{ marginTop: '15px' }}>
                              </ul>
                         </div>
