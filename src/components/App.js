@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import { BrowserRouter, Route } from 'react-router-dom';
-
 import PageTabs from './PageTabs';
 import Page1 from './Page1';
 import Page2 from './Page2';

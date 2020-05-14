@@ -19,18 +19,18 @@ class AddAccount extends React.Component {
                 <div classname="accounts-container">
                   <div className="accountlist">
                       <h3>Add an account:</h3>
-                      <label>Name</label>
+                      <label>Name: </label>
                       <input type="text"
-                             className="form-control name"
+                             className="col-xs-2 form control"
                              name="name"
                              value={this.state.name}
                              onChange={(e) => this.setState({name: e.target.value})} />
                   </div>
 
                   <div>
-                      <label>Starting Balance</label>
+                      <label>Start Balance: </label>
                       <input type="number"
-                             className="form-control"
+                             className=" col-xs-2 form control"
                              name="balance"
                              value={this.state.balance}
                              onChange={(e) => this.setState({balance: e.target.value})} />
