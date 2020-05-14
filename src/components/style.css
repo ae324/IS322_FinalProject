@@ -32,12 +32,19 @@ html {
   padding: 10px;
 }
 
+.addButton {
+  width: 125px;
+  background-color: teal;
+  color: white;
+  border: 1px solid black;
+}
+
 .account-details button {
   width: 75px;
   background-color: teal;
   float: right;
-  font-style: italic;
   color: white;
+  border: 1px solid black;
 }
 
 .card {
@@ -53,15 +60,12 @@ html {
   width: 75px;
   background-color: teal;
   float: right;
-  font-style: italic;
   color: white;
+  border: 1px solid black;
 }
 
-.transaction {
-  width: 25%;
-  border: 1px gray solid;
-  margin: 10px;
-  padding: 10px;
+.edit {
+  margin: 5px;
 }
 
 .flex {
@@ -83,9 +87,13 @@ html {
   text-align: center;
 }
 
-.nav-item:selected {
-  color: red;
-}
-body{
+body {
   background-color: #8cbcfe;
+}
+
+.transactions {
+  height: 220px;
+  width: 150px;
+  text-align: center;
+  margin: auto;
 }

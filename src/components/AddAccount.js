@@ -37,7 +37,7 @@ class AddAccount extends React.Component {
                   </div>
                 </div>
 
-                <input type="submit" value={'Add Account'}/>
+                <input type="submit" className="addButton" value={'Add Account'}/>
             </form>
         )
     }

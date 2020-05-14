@@ -27,11 +27,13 @@ class AccountList extends React.Component {
                               <ul>
                                </ul>
                               <button type='button'
+                                      className="edit"
                                       onClick={() => { this.props.removeAccount(acc._id) }}>
                                   Delete
                               </button>
 
                               <button type='button'
+                                      className="edit"
                                       onClick={() => {  }}>
                                   Edit
                               </button>

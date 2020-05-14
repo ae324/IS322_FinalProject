@@ -3,16 +3,20 @@ import AccountList from './AccountList';
 
 const Page3 = props => {
   return (
-      <div className="container">
+      <div>
         <h2>Select an account:</h2>
-        <div>
-            <AccountList title="Account List" stateList="not_selected"></AccountList>
-        </div>
-          <div>
+        <div className="accounts-container">
+          <div className="accountlist">
+            <div>
+                <AccountList title="Account List" stateList="not_selected"></AccountList>
+            </div>
               <div>
-              <AccountList title="Account Details" stateList="selected"></AccountList>
+                <div>
+                  <AccountList title="Account Details" stateList="selected"></AccountList>
+                </div>
               </div>
-          </div>
+            </div>
+        </div>
       </div>
   );
 }

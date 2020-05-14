@@ -8,8 +8,10 @@ class Page2 extends React.Component {
 
   render () {
     return(
-      <div>
-        <Transactions title="Account List"></Transactions>
+      <div className="accounts-container">
+        <div className="accountslist">
+          <Transactions title="Account List"></Transactions>
+        </div>
       </div>
     )
   }
