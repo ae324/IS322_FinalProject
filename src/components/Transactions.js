@@ -1,14 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import css from './style.css'
-import axios from 'axios'
 
 class Transactions extends React.Component {
 
   render() {
     return (
-      <div className="accounts-container">
-      <h3>Transactions:</h3>
+      <div className=" accounts-container ">
+          <h3>Transactions:</h3>
       {this.props.transactions.map((transaction, index) => {
         return <div classname="accountlist">
         <ul className="card">
