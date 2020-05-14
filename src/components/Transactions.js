@@ -9,7 +9,7 @@ class Transactions extends React.Component {
           <h3>Transactions:</h3>
       {this.props.transactions.map((transaction, index) => {
         return <div classname="accountlist">
-        <ul className="card">
+        <ul className="card ">
           <p>Account ID: {transaction._id}</p>
           <p>Type: {transaction.type}</p>
           <p>Amount: {transaction.amount}</p>
