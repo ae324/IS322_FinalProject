@@ -19,22 +19,24 @@ class AccountList extends React.Component {
                       <li className="account-details" key={acc._id}>
                           <h3>{ acc.name }</h3>
                           <div>Account ID: {acc._id}</div>
-                          <button type='button'
-                                  onClick={() => { this.props.removeAccount(acc._id) }}>
-                                      Delete
-                          </button>
 
-                          <button type='button'
-                                  onClick={() => {  }}>
-                                      Edit
-                          </button>
 
                           <div>
                               <p>Balance: {acc.balance}</p>
                               <p>Transactions: {acc.transactions}</p>
                               <ul>
                                </ul>
+                              <button type='button'
+                                      onClick={() => { this.props.removeAccount(acc._id) }}>
+                                  Delete
+                              </button>
+
+                              <button type='button'
+                                      onClick={() => {  }}>
+                                  Edit
+                              </button>
                           </div>
+
                       </li>
                     </div>
                   </div>
