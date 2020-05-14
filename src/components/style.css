@@ -16,6 +16,7 @@ html {
 
 .accountlist {
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 .accountlist h3 {
@@ -68,10 +69,6 @@ html {
   margin: 5px;
 }
 
-.flex {
-  display: flex;
-}
-
 .accountsleft {
   float: left;
   width: 50%;
@@ -89,6 +86,7 @@ html {
 
 body {
   background-color: #8cbcfe;
+  display: flex;
 }
 
 .transactions {
