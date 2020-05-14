@@ -13,7 +13,7 @@ const App = () => {
         <PageTabs/>
         <div>
           <Route path="/" exact component={Page1} />
-          <Route path="/page2" component={Page2} />
+          <Route path="/page2" component= {Page2} />
           <Route path="/page3" component={Page3} />
         </div>
       </BrowserRouter>
