@@ -8,15 +8,15 @@ html {
 
 .accounts-container {
   text-align: center;
-}
-
-.accountlist {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .accountlist {
   padding: 10px;
-  flex-wrap: wrap;
+  margin: 10px;
 }
 
 .accountlist h3 {
@@ -86,12 +86,4 @@ html {
 
 body {
   background-color: #8cbcfe;
-  display: flex;
-}
-
-.transactions {
-  height: 220px;
-  width: 150px;
-  text-align: center;
-  margin: auto;
 }

@@ -9,7 +9,8 @@ class Page2 extends React.Component {
   render () {
     return(
       <div className="accounts-container">
-        <div className="accountslist">
+      <h3>Account Transactions</h3>
+        <div className="accountlist">
           <Transactions title="Account List"></Transactions>
         </div>
       </div>

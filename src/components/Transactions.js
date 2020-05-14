@@ -6,7 +6,7 @@ class Transactions extends React.Component {
   render() {
     return (
       <div>
-          <h3>Account Transactions</h3>
+          
       {this.props.transactions.map((transaction, index) => {
         return <div className="card">
         <ul className="transactions">
