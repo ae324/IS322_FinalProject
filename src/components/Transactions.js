@@ -6,7 +6,7 @@ class Transactions extends React.Component {
   render() {
     return (
       <div className=" accounts-container ">
-          <h3>Transactions:</h3>
+          <h3>Account Transactions</h3>
       {this.props.transactions.map((transaction, index) => {
         return <div classname="accountlist">
         <ul className="card ">

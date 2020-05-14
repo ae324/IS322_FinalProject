@@ -1,6 +1,5 @@
 import React from 'react';
 import AccountList from './AccountList';
-import css from './style.css';
 
 
 const Page1 = () => {
