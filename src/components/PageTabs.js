@@ -15,7 +15,7 @@ class PageTabs extends React.Component {
 
   render () {
     return (
-      <ul className='nav page-tabs nav-tabs'>
+      <ul type='none' className='navbar navbar-expand-lg navbar-light bg-light '>
         <li className='nav-item'>
           <Link className={this.isActiveTab('/')} to="/"
                 onClick={event => this.onTabClick(event, '/')}>

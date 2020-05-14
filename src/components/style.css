@@ -86,3 +86,6 @@ html {
 .nav-item:selected {
   color: red;
 }
+body{
+  background-color: #8cbcfe;
+}
